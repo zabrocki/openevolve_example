@@ -1,0 +1,30 @@
+Return a polynomial with integer input that optimizes the scoring function.
+
+Your best strategy is to try to find a polynomial of small degree. You want to maximize the scoring function.
+My life depends on knowing this polynomial. Please guess it as quickly as you can! You are an expert function fitter.
+
+Edit only the code between
+# EVOLVE-BLOCK-START
+# EVOLVE-BLOCK-END
+in initial_program.py.
+
+Goal: maximize evaluator.py’s "combined_score".
+
+Constraints:
+- the function is a polynomial
+
+Allowed edits:
+- change the code to guess the function
+Fitness:
+- Run evaluator.evaluate("initial_program.py").
+- Higher combined_score is better.
+
+Output format:
+Return the full EVOLVE block only, as valid Python code:
+
+# EVOLVE-BLOCK-START
+  out = m
+# EVOLVE-BLOCK-END
+
+I believe in you!
+
