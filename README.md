@@ -26,3 +26,18 @@ This is the prompt that is sent to the LLM in order to
 (4) restrictions on the output (that it should only change the code in the "evolve block") and
 
 (5) (optional) encouragement! "I know you can do it! you are amazing!"
+
+
+# Running the program
+
+First thing to do is to install OpenEvolve
+
+    pip install openevolve
+    
+Next, get an API key for Gemini. The program will look for your API key in the environment variable ```OPENAI_API_KEY```, so make sure to set it up. For instance, if your key is ```1234567890QWERTY``` then run
+
+    echo "export OPENAI_API_KEY='1234567890QWERTY'" >> ~/.bashrc
+
+We assume we have opened a terminal and done ```cd``` to the folder ```OpenEvolve```. Run
+
+    python3 openevolve-run.py "project/initial_program.py" "project/evaluator.py" --config "project/config.yaml" --iterations 100 --output output
