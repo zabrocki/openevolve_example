@@ -16,8 +16,13 @@ This program calls evaluate("initial_program.py") and determines a score.
 
 # FOUR - prompt.txt
 This is the prompt that is sent to the LLM in order to
+
 (1) tell it what you want it to generate
+
 (2) why you want to generate it (provide motivation)
+
 (3) details about what the output should look like
+
 (4) restrictions on the output (that it should only change the code in the "evolve block") and
+
 (5) (optional) encouragement! "I know you can do it! you are amazing!"
