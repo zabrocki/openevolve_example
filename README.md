@@ -3,18 +3,19 @@ a minimal example of using OpenEvolve for a seminar presentation
 
 There are four components to an OpenEvolve program
 
-# ONE - config.yml
+# ONE - `config.yml`
 This contains all of the various parameters of the algorithm.  In particular it specifies what the server for the LLM and the model that will be used to generate new code and the model that will be used to evaluate whether that code is correct.
 There are many other parameters that can be modified including the "temperature" indicating how creative you want the LLM to be when it generates answer.
 
-# TWO - evaluator.py
+# TWO - `evaluator.py`
 This is a program that has a function evaluate that returns a dictionary with entries "combined_score".
 That dictionary can also have separate individual scores and keep track of additional logged information about the evaluation.
 This program calls evaluate("initial_program.py") and determines a score.
 
-# THREE - initial_program.py
+# THREE - `initial_program.py`
+This is the starting point of the open evolve program.  There should be part of this program that we want the LLM to change within the evolve blocks.
 
-# FOUR - prompt.txt
+# FOUR - `prompt.txt`
 This is the prompt that is sent to the LLM in order to
 
 (1) tell it what you want it to generate
